@@ -9,7 +9,7 @@ token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJlbWFpbCI6InRlc3
 token = str(token).strip()
 appID = str(appID).strip()
 
-url = 'https://appsecure.accenture.com/api/scan_binary/'
+url = 'https://d3170da0.ngrok.io/CI/?Uid=1903db5b29f9b4b27efcf467fff27fb0/api/scan_binary/'
 
 path = appName  #travis path 
 
@@ -35,7 +35,7 @@ if data['status'] == 'Failed':
 x = str(data['message']).split("=")
 x = x[1]
 
-checkurl = 'https://appsecure.accenture.com/api/executive_report/'
+checkurl = 'https://d3170da0.ngrok.io/CI/?Uid=1903db5b29f9b4b27efcf467fff27fb0/api/executive_report/'
 values = {'appId' : x, }
 authtoken = "JWT "+str(token)
 headers = { "Authorization" : authtoken }
