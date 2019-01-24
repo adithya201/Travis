@@ -2,5 +2,5 @@ language: python
 python:
     - "2.7"
 install: pip install requests==2.9.1
-script: python travis-wrapper.py insec.apk
+script: python travis-wrapper.py xposed.apk
                                             
