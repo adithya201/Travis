@@ -1,6 +1,6 @@
 language: python
 python:
     - "3.6"
-install: pip install requests==2.21.1
+install: pip install requests==2.21.0
 script: python travis-wrapper.py xposed.apk
                                             
